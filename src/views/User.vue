@@ -4,7 +4,7 @@
       <b-row>
         <b-col class="text-left  mx-auto" lg="6">
           <div class="container" id="header">
-            <h3 class="head">List of usere</h3>
+            <h3 class="head">List of user</h3>
             <input type="text" id="put" v-model="name" />
             <button @click="addUser" class="btn">Add</button>
           </div>
@@ -39,7 +39,7 @@ export default {
       this.name = null;
     },
     removeUser(user) {
-      this.users.splice(user, 1);
+      this.users.splice(this.users.indexOf(user), 1);
     }
   },
 
